@@ -1,0 +1,5 @@
+<mat-grid-list [cols]="cols | async" rowHeight="420px" gutterSize="0px">
+  <mat-grid-tile *ngFor="let result of get() | async">
+    <app-result [rawResult]="result"></app-result>
+  </mat-grid-tile>
+</mat-grid-list>

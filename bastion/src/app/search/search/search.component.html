@@ -1,0 +1,5 @@
+<mat-form-field>
+  <input matInput #searchBox type="search" placeholder="title" (keyup.enter)="search(searchBox.value)">
+</mat-form-field>
+
+<app-result-list></app-result-list>

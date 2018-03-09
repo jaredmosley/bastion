@@ -1,0 +1,9 @@
+<img [src]="result.image" />
+<mat-grid-tile-footer fxLayout="row">
+  <div>
+    <span>{{ result.title }} ({{ result.year }}) {{ result.id }}</span>
+  </div>
+  <button mat-button-toggle (click)="downloadClick(result.id)">
+    <mat-icon>file_download</mat-icon>
+  </button>
+</mat-grid-tile-footer>
